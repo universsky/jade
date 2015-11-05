@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+    <dubbo:reference id="registryService"  registry="default-dubbo-registry" interface="com.alibaba.dubbo.registry.RegistryService" check="false" />
+        
+    <bean id="NotifyMe" class="com.ofpay.edge.listener.NotifyMe">
+        <property name="registryService" ref="registryService"></property>
+        <property name="urlFilterRegex" value="${interface.urlFilterRegex}"></property>
+        <property name="subcribeParams">
+            <map>
+                <entry key="interface" value="*" />
+                <entry key="version" value="*" />
+                <entry key="category" value="providers" />
+                <entry key="group" value="*" />
+                <entry key="classifier" value="*" />
+                <entry key="enabled" value="*" />
+                <entry key="check" value="false" />
+            </map>
+        </property>
+    </bean>
+</beans>
