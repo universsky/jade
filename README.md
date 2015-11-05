@@ -12,9 +12,9 @@
 
 
 
-![](https://github.com/universsky/jade/blob/master/jade_dubbo_service_test.tiff)
+![](https://github.com/universsky/jade/blob/master/jade_dubbo_service_test.jpg)
 
 
-![](https://github.com/universsky/jade/blob/master/jade_dubbo_service_test_upload.tiff)
+![](https://github.com/universsky/jade/blob/master/jade_dubbo_service_test_upload.jpg)
 
 
