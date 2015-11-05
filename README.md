@@ -1,6 +1,6 @@
 # Welcome to the jade wiki!
 
-## Jade是一款用于测试Dubbo接口的开发者测试工具(基于开源Edge代码)；能够让开发测试者对dubbo服务进行界面化的测试；
+### Jade是一款用于测试Dubbo接口的开发者测试工具(基于开源Edge代码)；能够让开发测试者对dubbo服务进行界面化的测试；
 
 # 使用指南
 
