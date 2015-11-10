@@ -129,4 +129,10 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<artifactId>jade</artifactId>
+
+	<build>
+		<finalName>jade</finalName>
+	</build>
+
+
 </project>

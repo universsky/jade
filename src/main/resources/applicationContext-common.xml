@@ -26,7 +26,6 @@
 				<value>/WEB-INF/config.properties</value>
 				<!-- 生产环境 -->
 				<value>file:~/apps/config/config.properties</value>
-
 				<!-- 第三方测试包配置文件加载 -->
 				<value>/WEB-INF/thirdpart/*.properties</value>
 
